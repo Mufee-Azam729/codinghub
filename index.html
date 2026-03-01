@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeStack · learn to code</title>
+    <!-- Font & Icons (Font Awesome) -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>codeStack</span>
+        </div>
+        <div class="nav-links">
+            <a href="learn.html">Learn</a>
+            <a href="play.html">Playground</a>
+            <a href="challanges.html">Challenges</a>
+            <a href="community.html">Community</a>
+            <a href="index2.html" class="btn-primary">Sign in</a>
+        </div>
+    </nav>
+
+    <!-- hero / main intro -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>write code.<br>build the future.</h1>
+            <p>Interactive courses, real-time practice, and a community that helps you grow from zero to hero.</p>
+            <div class="hero-buttons">
+                <a href="start.html" class="btn-large"><i class="fas fa-rocket"></i> Start learning</a>
+                <a href="view.html" class="btn-outline"><i class="fas fa-play"></i> View demo</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-window">
+                <div class="dot-row">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="code-snippet">
+                    <span class="keyword">function</span> <span class="func">greet</span>(name) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">`Hello, <span
+                            class="func">${</span>name<span class="func">}</span>!`</span>;<br>
+                    }<br><br>
+                    <span class="keyword">console</span>.<span class="func">log</span>(<span
+                        class="func">greet</span>(<span class="string">"developer"</span>));<br>
+                    <span class="comment">// Hello, developer!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- learning tracks -->
+    <div class="section-header">
+        <h2><i class="fas fa-cubes"></i> explore paths</h2>
+    </div>
+    <div class="track-grid">
+        <div class="track-card">
+            <div class="track-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <p>From closures to async — master the web's language.</p>
+            <a href="java.html" class="track-link">start <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="track-card">
+            <div class="track-icon"><i class="fab fa-python"></i></div>
+            <h3>Python</h3>
+            <p>Data science, AI, backend — all in one elegant language.</p>
+            <a href="pyton.html" class="track-link">start <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="track-card">
+            <div class="track-icon"><i class="fas fa-database"></i></div>
+            <h3>SQL</h3>
+            <p>Query like a pro and unlock insights from data.</p>
+            <a href="sql.html" class="track-link">start <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="track-card">
+            <div class="track-icon"><i class="fab fa-html5"></i></div>
+            <h3>Web basics</h3>
+            <p>HTML, CSS, responsive design — craft beautiful UI.</p>
+            <a href="web.html" class="track-link">start <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- LIVE PLAYGROUND preview -->
+    <div class="playground">
+        <div class="playground-inner">
+            <div class="playground-header">
+                <h2><i class="fas fa-terminal" style="margin-right: 10px;"></i> live code playground</h2>
+                <span><i class="far fa-keyboard"></i> try it yourself</span>
+            </div>
+            <div class="code-editor-area">
+                <div class="editor-panel">
+                    <div class="header-row">
+                        <i class="fas fa-circle" style="color: #ff5f56;"></i>
+                        <i class="fas fa-circle" style="color: #ffbd2e;"></i>
+                        <i class="fas fa-circle" style="color: #27c93f;"></i>
+                        <span style="margin-left: auto;">script.js</span>
+                    </div>
+                    <div class="code-snippet">
+                        <span class="keyword">function</span> <span class="func">calculate</span>(a, b) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> a * b + <span class="string">'
+                            points'</span>;<br>
+                        }<br><br>
+                        <span class="comment">// click run to see output</span><br>
+                        <span class="func">console.log</span>(<span class="func">calculate</span>(<span
+                            class="string">12</span>, <span class="string">7</span>));
+                    </div>
+                </div>
+                <div class="preview-panel" id="livePreview">
+                    <i class="fas fa-arrow-right-from-bracket"
+                        style="font-size: 1.8rem; color: #2563eb; margin-bottom: 0.5rem;"></i>
+                    <p><strong>console output</strong></p>
+                    <div class="output-box" id="outputDisplay">84 points</div>
+                    <button class="btn-run" id="runCodeBtn"><i class="fas fa-play"></i> Run code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- community section (interactive/dynamic) -->
+    <div class="community-section">
+        <div class="community-text">
+            <h3><i class="fas fa-users"></i> learn with 12k+ coders</h3>
+            <p>Join live coding sessions, share solutions, and get feedback from peers and mentors.</p>
+            <div class="avatar-stack">
+                <span class="avatar">JD</span>
+                <span class="avatar">ML</span>
+                <span class="avatar">TK</span>
+                <span class="avatar">RP</span>
+                <span class="avatar" style="background: #1e293b;">+6k</span>
+            </div>
+            <a href="join .html" class="btn-outline"
+                style="border-color: #2563eb; margin-top: 0.5rem; display: inline-block;">Join community <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="community-image">
+            <i class="fas fa-comments"></i>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i> codeStack
+            </div>
+            <div class="footer-links">
+                <div>
+                    <strong style="color: white;">learn</strong>
+                    <a href="#">courses</a>
+                    <a href="#">docs</a>
+                    <a href="#">code challenges</a>
+                </div>
+                <div>
+                    <strong style="color: white;">connect</strong>
+                    <a href="#">discord</a>
+                    <a href="#">twitter</a>
+                    <a href="#">github</a>
+                </div>
+                <div>
+                    <strong style="color: white;">about</strong>
+                    <a href="#">pricing</a>
+                    <a href="#">careers</a>
+                    <a href="#">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 codeStack – build with ☕ and ⌨️ . All learning paths are open to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
